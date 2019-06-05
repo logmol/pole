@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div class="pole" style="display: block;">
+		<img src="pole.png">
+	</div>
+<div class="start" style="display: none;">
+	<div class="col-6 mx-auto bg-white ">
+		<div class="col-12 bg-warning">
+			<h3>Селитру часто использовали в своих опытах и алхимики. Одним из первых изобрел китайский алхимик Сунь Сы-мяо в VII веке. Приготовив смесь селитры, серы и локустового дерева и нагревая ее в тигле, он получил неожиданно сильную вспышку пламени.</h3>
+		</div>
+		<div class="row mx-auto">
+			<div class="col-2 black border prav" style="height: 100px; font-size: 70px; background: black; color: black">
+				П
+			</div>
+			<div class="col-2 border prav1" style="height: 100px; font-size: 70px; background: black; color: black">
+				О
+			</div>
+			<div class="col-2  border prav2" style="height: 100px; font-size: 70px; background: black; color: black">
+				Р
+			</div>
+			<div class="col-2  border prav3" style="height: 100px; font-size: 70px; background: black; color: black">
+				О
+			</div>
+			<div class="col-2 b border prav4" style="height: 100px; font-size: 70px; background: black; color: black">
+				Х
+			</div>
+		</div>
+		<div class="col-12">
+			<span class="а">а</span>
+			<span class="б">б</span>
+			<span class="в">в</span>
+			<span class="г">г</span>
+			<span class="д">д</span>
+			<span class="е">е</span>
+			<span class="ё">ё</span>
+			<span class="ж">ж</span>
+			<span class="з">з</span>
+			<span class="и">и</span>
+			<span class="й">й</span>
+			<span class="к">к</span>
+			<span class="л">л</span>
+			<span class="м">м</span>
+			<span class="н">н</span>
+			<span class="о">о</span>
+			<span class="п">п</span>
+			<span class="р">р</span>
+			<span class="с">с</span>
+			<span class="т">т</span>
+			<span class="у">у</span>
+			<span class="ф">ф</span>
+			<span class="х">х</span>
+			<span class="ц">ц</span>
+			<span class="ч">ч</span>
+			<span class="ш">ш</span>
+			<span class="щ">щ</span>
+			<span class="ъ">ъ</span>
+			<span class="ы">ы</span>
+			<span class="ь">ь</span>
+			<span class="э">э</span>
+			<span class="ю">ю</span>
+			<span class="я">я</span>
+		</div>
+	</div>
+		<div class="col-5 border">
+		<span>"в эфире капитал шоу поле чудес! вам нужно угадать слово"</span>
+	</div>
+	<div class="col-3">
+		<img src="start.png" class="w-100">
+	</div>
+</div>
+
+<script type="text/javascript">
+	//заставка
+	let x =  function(){
+		document.querySelector(".pole").style.display = "none"
+		document.querySelector(".start").style.display = "block"
+	}
+	setTimeout(x, 1000);
+	//правильно
+	document.querySelector(".п").onclick = function(){
+		alert("Правильно")
+		document.querySelector(".prav").style.background = "white";
+	}
+	document.querySelector(".о").onclick = function(){
+		alert("Правильно")
+		document.querySelector(".prav1").style.background = "white";
+		document.querySelector(".prav3").style.background = "white";
+	}
+	document.querySelector(".р").onclick = function(){
+		alert("Правильно")
+		document.querySelector(".prav2").style.background = "white";
+	}
+	document.querySelector(".х").onclick = function(){
+		alert("Правильно")
+		document.querySelector(".prav4").style.background = "white";
+	}
+	//не правильно
+	let no = function(){
+		alert("Не правильно")
+	}
+	document.querySelector(".а").onclick = no
+	document.querySelector(".б").onclick = no
+	document.querySelector(".в").onclick = no
+	document.querySelector(".г").onclick = no
+	document.querySelector(".д").onclick = no
+	document.querySelector(".е").onclick = no
+	document.querySelector(".ё").onclick = no
+	document.querySelector(".ж").onclick = no
+	document.querySelector(".з").onclick = no
+	document.querySelector(".и").onclick = no
+	document.querySelector(".й").onclick = no
+	document.querySelector(".к").onclick = no
+	document.querySelector(".л").onclick = no
+	document.querySelector(".м").onclick = no
+	document.querySelector(".н").onclick = no
+	document.querySelector(".с").onclick = no
+	document.querySelector(".т").onclick = no
+	document.querySelector(".у").onclick = no
+	document.querySelector(".ф").onclick = no
+	document.querySelector(".ц").onclick = no
+	document.querySelector(".ч").onclick = no
+	document.querySelector(".ш").onclick = no
+	document.querySelector(".щ").onclick = no
+	document.querySelector(".ъ").onclick = no
+	document.querySelector(".ы").onclick = no
+	document.querySelector(".ь").onclick = no
+	document.querySelector(".э").onclick = no
+	document.querySelector(".ю").onclick = no
+	document.querySelector(".я").onclick = no
+
+</script>
+</body>
+</html>
